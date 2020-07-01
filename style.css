@@ -1,0 +1,19 @@
+:root {
+    --main-white: wheat;
+    --main-red: #be3144;
+    --main-blue: #e1f4f3;
+    --main-gray: #383838;
+    --main-black: #252525;
+    --project-blue: #226491;
+}
+
+/*Start of styles*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    scroll-behavior: smooth;
+}
