@@ -1,91 +1,115 @@
 :root {
-    --main-white: wheat;
-    --main-red: #be3144;
-    --main-blue: #e1f4f3;
-    --main-gray: #383838;
-    --main-black: #252525;
-    --project-blue: #226491;
+  --main-white: wheat;
+  --main-red: #be3144;
+  --main-blue: #e1f4f3;
+  --main-gray: #383838;
+  --main-black: #252525;
+  --project-blue: #226491;
 }
 
 /*Start of styles*/
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body,
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 button {
-    color: white;
-    cursor: pointer;
-    outline: none;
-    box-shadow: 0px 0px 0px transparent;
-    border: 0px solid transparent;
-    text-shadow: 0px 0px 0px transparent;
+  color: white;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 0px 0px 0px transparent;
+  border: 0px solid transparent;
+  text-shadow: 0px 0px 0px transparent;
 }
 
 button:active {
-    transform: none;
+  transform: none;
 }
 
+/* Header part of the page */
 .header {
-    background-color: black;
-    position: absolute;
-    min-height: 80px;
-    height: 8.5vh;
-    min-width: 100vw;
+  background-color: black;
+  position: absolute;
+  min-height: 80px;
+  height: 8.5vh;
+  min-width: 100vw;
 }
 
 .header button {
-    background-color: var(--main-black);
-    border-radius: 80px;
-    height: 65%;
+  background-color: var(--main-black);
+  border-radius: 80px;
+  height: 65%;
 }
 
 .menu-bar {
-    color: white;
-    margin: auto;
-    width: 68vw;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-
+  color: white;
+  margin: auto;
+  width: 68vw;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .brand-name {
-    flex-grow: 1;
+  flex-grow: 1;
 }
 
 .location-bar {
-    height: 100%;
-    flex-grow: 3;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  height: 100%;
+  flex-grow: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .add-location-btn {
-    width: 250px;
+  width: 250px;
 }
 
 .help-bar {
-    flex-grow: 1;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+  flex-grow: 1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .help-bar button {
-    background-color: black;
-    width: 100px;
+  background-color: black;
+  width: 100px;
 }
 
 #signup {
-    background-color: var(--main-black);
+  background-color: var(--main-black);
+}
+
+/* main part of the page */
+.container {
+  background-color: var(--main-red);
+  height: 100%;
+  width: 63%;
+  margin: auto;
+}
+.media-showcase {
+  background-color: black;
+  min-height: 800px;
+  height: 86.5vh;
+}
+
+/* footer part of the page */
+.footer {
+  position: fixed;
+  bottom: 0px;
+  background-color: white;
+  box-shadow: 0px 0 2px rgba(0, 0, 0, 0.5);
+  height: 7vh;
+  min-width: 100vw;
 }
