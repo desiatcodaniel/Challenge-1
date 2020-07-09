@@ -71,7 +71,7 @@ button:active {
 }
 
 .add-location-btn {
-  width: 250px;
+  width: 220px;
 }
 
 .help-bar {
@@ -92,16 +92,83 @@ button:active {
 }
 
 /* main part of the page */
+
+.full {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .container {
-  background-color: var(--main-red);
   height: 100%;
   width: 63%;
   margin: auto;
 }
+
 .media-showcase {
   background-color: black;
-  min-height: 800px;
-  height: 86.5vh;
+  margin-top: 8.5vh;
+  padding-top: 30px;
+  min-height: 650px;
+  height: 75vh;
+}
+
+.media {
+  display: grid;
+  grid-template-areas: "video picture"
+    "categories details";
+  grid-template-rows: 2fr 1fr;
+  grid-template-columns: 2fr 5fr;
+  grid-gap: 5px;
+}
+
+.video {
+  background-color: var(--main-blue);
+  grid-area: video;
+}
+
+.pictures {
+  background-color: black;
+  width: 100%;
+  grid-area: picture;
+  display: grid;
+  grid-template-areas: "image1 image2 image4"
+    "image1 image3 image4";
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 2fr 1fr 2fr;
+  grid-gap: 5px;
+}
+
+#image-1 {
+  background-color: var(--main-red);
+  grid-area: image1;
+}
+
+#image-2 {
+  background-color: var(--main-gray);
+  grid-area: image2;
+}
+
+#image-3 {
+  background-color: var(--main-blue);
+  grid-area: image3;
+}
+
+#image-4 {
+  background-color: var(--project-blue);
+  grid-area: image4;
+}
+
+.item-categories {
+  background-color: var(--project-blue);
+  grid-area: categories;
+}
+
+.item-details {
+  background-color: var(--main-black);
+  grid-area: details;
 }
 
 /* footer part of the page */
